@@ -42,7 +42,7 @@ int main(){
         printf("enter the string:\n");
         scanf("%s",str);
 
-        memcpy(sstr, str, 100);
+        strcpy(sstr, str);
 
         printf("%s",sstr);
         break;
