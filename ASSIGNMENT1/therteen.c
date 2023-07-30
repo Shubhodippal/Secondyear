@@ -1,23 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-int concatinate(){
-    char inputString[100];
-
-    printf("Enter a string: ");
-    fgets(inputString, sizeof(inputString), stdin);
-
-    char inputSString[100];
-
-    printf("Enter a string: ");
-    fgets(inputSString, sizeof(inputSString), stdin);
-
-    inputString[strcspn(inputString, "\n")] = '\0';
-    inputSString[strcspn(inputSString, "\n")] = '\0';
-    
-    printf("You entered: %s", strcat(inputString, inputSString));
-
-    return 0;
-}
 int main(){
     int state;
     printf("What do you want to do\nPress 1 for calculate the length of the string\nPress 2 for reverse the string\nPress 3 for concatination of two string\nPress 4 for copy one string to another\nPress 5 for comapre two string\n:");
@@ -41,18 +23,55 @@ int main(){
         printf("After reversing the array is %s", strrev(str));
         break;
     }
-    case 3:{
-        concatinate();
+    case 3:{        
+        char a[100];
+        char b[100];
+
+        printf("enter first string\n");
+        scanf("%s",a);
+        printf("enter second string");
+        scanf("%s",b);
+
+        printf("after concentration the string is \n%s", strcat(a,b));
+
     }
     case 4:{
+        char str[100];
+        char sstr[100];
 
+        printf("enter the string:\n");
+        scanf("%s",str);
+
+        memcpy(sstr, str, 100);
+
+        printf("%s",sstr);
         break;
     }
     case 5:{
+        
+        char str1[20]; 
+        char str2[20]; 
+
+        int value;  
+
+        printf("Enter the first string : ");  
+        scanf("%s",str1);  
+        printf("Enter the second string : ");  
+        scanf("%s",str2);
+           
+        value=strcmp(str1,str2);  
+
+        if(value==0){
+            printf("strings are same");  
+        }  
+        else{
+            printf("strings are not same"); 
+        }  
 
         break;
     }
     default:
+        printf("Wrong input");
         break;
     }
 }
