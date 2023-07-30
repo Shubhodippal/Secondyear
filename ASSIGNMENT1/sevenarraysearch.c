@@ -41,7 +41,7 @@ void modification(int arr[], int size, int index){
         arr[i]=arr[i+1];
     }
     size--;
-    printf("/nAfter deleteing the modified array is: ");
+    printf("\nAfter deleteing the modified array is: ");
     for(int i=0;i<size;i++){
         printf("%d", arr[i]);
     }

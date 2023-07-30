@@ -1,5 +1,4 @@
 #include<stdio.h>
-void multiply();
 int main(){
     int column;
     int row;
@@ -12,18 +11,15 @@ int main(){
     printf("Enter the first matrix:");
     for(int i=0;i<row;i++){
         for(int j=0;j<column;j++){
-            scanf("%d", arr_one[i][j]);
+            scanf("%d", &arr_one[i][j]);
         }
     }
     printf("Enter the second matrix:");
     for(int i=0;i<row;i++){
         for(int j=0;j<column;j++){
-            scanf("%d", arr_two[i][j]);
+            scanf("%d", &arr_two[i][j]);
         }
     }
-    multiply(arr_one, arr_two, column, row);
-}
-void multiply(int** arr_one, int** arr_two, int column, int row){
     int result[row][column];
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < column; j++) {
@@ -33,4 +29,12 @@ void multiply(int** arr_one, int** arr_two, int column, int row){
             }
         }
     }
+    printf("The multiplication of the two matrix is:\n");
+    for(int i=0;i<row;i++){
+        for(int j=0;j<column;j++){
+            printf(" %d ", result[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
 }

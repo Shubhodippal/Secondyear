@@ -16,23 +16,23 @@ int main(){
         break;
     }
     case 2:{
-        int n;
-        printf("Enter the size of the string:");
-        scanf("%d", &n);
-        char str[n];
-        printf("After reversing the array is %s", strrev(str));
+        char str[100];
+        printf("Enter the string\n");
+        scanf("%s",str);
+        printf("After reversing the string is %s", strrev(str));
         break;
     }
     case 3:{        
         char a[100];
         char b[100];
 
-        printf("enter first string\n");
+        printf("Enter first string\n");
         scanf("%s",a);
-        printf("enter second string");
+        printf("Enter second string\n");
         scanf("%s",b);
 
-        printf("after concentration the string is \n%s", strcat(a,b));
+        printf("\nAfter concatination the string is \n%s", strcat(a,b));
+        break;
 
     }
     case 4:{
