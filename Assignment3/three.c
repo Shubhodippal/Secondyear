@@ -1,5 +1,10 @@
 //insertion sort
 #include<stdio.h>
+void swap(int *fb, int *sb){
+    (*fb)=(*fb)+(*sb);
+    (*sb) = (*fb)-(*sb);
+    (*fb) -= (*sb);
+}
 void insertionsort(int arr[], int*n){
     for(int i=1;i<*n;i++){
         int key = arr[i];
