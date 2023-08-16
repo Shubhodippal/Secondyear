@@ -18,8 +18,8 @@ int main(){
         //fflush(stdin);//clearing buffer
     }
     for(int i=0;i<n;i++){
-        printf("/nThe %d employee is: %s", i+1,p[i].name);
-        printf("/nHis salary is: %d", p->salary);
+        printf("\nThe %d employee is: %s", i+1,p[i].name);
+        printf("\nHis salary is: %d", p->salary);
     }
     return 0;
 }
