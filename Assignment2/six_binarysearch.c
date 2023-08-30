@@ -16,7 +16,6 @@ int binarysearch(int arr[], int *n, int *key){
             left = mid + 1;
         }
     }
-    
     return -1;
 }
 int main(){
