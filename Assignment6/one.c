@@ -46,7 +46,6 @@ void printList(struct Node* head) {
 int main() {
     struct Node* head = NULL; // Initialize an empty linked list
 
-    // Insert elements into the linked list at the end
     insertEnd(&head, 1);
     insertEnd(&head, 2);
     insertEnd(&head, 3);
