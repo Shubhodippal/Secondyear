@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/OneDrive/Programme/Secondyear",
-      "program": "d:/OneDrive/Programme/Secondyear/build/Debug/outDebug",
+      "cwd": "d:/OneDrive/Programme/Secondyear/Assignment9",
+      "program": "d:/OneDrive/Programme/Secondyear/Assignment9/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "D:/OneDrive/Programme/Prac/MINGW/bin/gdb.exe",
       "setupCommands": [
